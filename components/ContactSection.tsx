@@ -1,0 +1,86 @@
+import React, { useState } from 'react';
+
+const ContactForm: React.FC = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log('Form Submitted:', { name, email, message });
+        alert('Thank you for your message!');
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
+
+    return (
+        <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+                <label htmlFor="name" className="sr-only">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Your Name"
+                    required
+                    className="w-full bg-brand-light border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-accent"
+                />
+            </div>
+            <div>
+                <label htmlFor="email" className="sr-only">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your Email"
+                    required
+                    className="w-full bg-brand-light border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-accent"
+                />
+            </div>
+            <div>
+                <label htmlFor="message" className="sr-only">Message</label>
+                <textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Your Message"
+                    required
+                    rows={5}
+                    className="w-full bg-brand-light border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-accent"
+                ></textarea>
+            </div>
+            <button
+                type="submit"
+                className="w-full bg-brand-accent text-white font-bold py-3 px-6 text-lg uppercase hover:bg-red-800 transition duration-300 transform hover:scale-105"
+            >
+                Send Message
+            </button>
+        </form>
+    );
+};
+
+
+const ContactSection: React.FC = () => {
+    return (
+        <section id="contact" className="bg-brand-primary py-16 md:py-24">
+            <div className="container mx-auto px-6">
+                <div className="max-w-3xl mx-auto text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                        Start The Conversation
+                    </h2>
+                    <p className="mt-4 text-lg text-brand-secondary">
+                        Have a project in mind or just want to say hello? Drop us a line.
+                    </p>
+                </div>
+                <div className="mt-12 max-w-xl mx-auto">
+                    <ContactForm />
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default ContactSection;
