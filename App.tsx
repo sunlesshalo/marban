@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-brand-primary text-brand-secondary font-sans leading-relaxed">
+    <div className="bg-white dark:bg-brand-primary text-gray-700 dark:text-brand-secondary font-sans leading-relaxed">
       <Header />
       <main>
         <PartnersSection />

@@ -14,14 +14,14 @@ const CtaSection: React.FC = () => {
         backgroundImage: "url('https://images.unsplash.com/photo-1516549655169-98e4a2904b40?q=80&w=2070&auto=format&fit=crop')",
       }}
     >
-      <div className="absolute inset-0 bg-brand-primary opacity-70"></div>
+      <div className="absolute inset-0 bg-brand-primary opacity-50 dark:opacity-70"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-brand-accent to-transparent opacity-60"></div>
       <BackgroundAnimation />
       <div ref={ref} className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
         <h2 className={`text-3xl md:text-4xl font-bold text-white tracking-tight mb-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           Ready to Transform Your Marketing?
         </h2>
-        <p className={`max-w-2xl mx-auto text-lg text-brand-secondary mb-8 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+        <p className={`max-w-2xl mx-auto text-lg text-gray-200 dark:text-brand-secondary mb-8 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           Let's build a strategy that drives real results. Contact us today for a free consultation.
         </p>
         <a
