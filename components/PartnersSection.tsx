@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo: React.FC<{ name: string }> = ({ name }) => (
-  <div className="flex-shrink-0 mx-10">
+  <div className="flex-shrink-0 mx-4 md:mx-8">
     <div className="text-2xl font-semibold text-slate-500 filter grayscale hover:grayscale-0 hover:text-white transition-all duration-300 cursor-pointer">
       {name}
     </div>
