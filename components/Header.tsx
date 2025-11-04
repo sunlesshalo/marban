@@ -38,17 +38,17 @@ const Header: React.FC = () => {
                     {/* Left: Text, CTA, Contact */}
                     <div className="flex flex-col h-full">
                         <div className="flex-grow">
-                            <h1 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white leading-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                                MAKING<br />SOCIAL MEDIA
+                            <h1 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white leading-tight animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '0.2s', textShadow: '0 4px 12px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3)' }}>
+                                Making<br />Social Media<br /><span className="text-brand-accent">Work For You</span>
                             </h1>
-                            <p className="mt-4 text-xl md:text-2xl text-gray-700 dark:text-brand-secondary animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                                for business owners & brands easy
+                            <p className="mt-6 text-xl md:text-2xl text-gray-800 dark:text-brand-secondary font-medium animate-fade-in-up" style={{ animationDelay: '0.4s', textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
+                                Strategic marketing solutions for ambitious brands
                             </p>
                             <a
                                 href="#contact"
-                                className="mt-8 inline-flex items-center bg-brand-accent text-white font-bold py-3 px-8 uppercase hover:bg-red-800 transition duration-300 transform hover:scale-105 animate-fade-in-up" style={{ animationDelay: '0.6s' }}
+                                className="mt-10 inline-flex items-center bg-brand-accent text-white font-bold py-4 px-10 rounded-sm uppercase hover:bg-red-800 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}
                             >
-                                JOIN US!
+                                Let's Talk
                                 <ChevronRightIcon className="w-5 h-5 ml-2" />
                             </a>
                         </div>

@@ -14,13 +14,13 @@ const teamMembers: TeamMember[] = [
 ];
 
 const TeamMemberCard: React.FC<TeamMember> = ({ name, role, image }) => (
-  <div className="relative group overflow-hidden aspect-[3/4] rounded-lg shadow-lg">
+  <div className="relative group overflow-hidden aspect-[3/4] rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
     <img
       src={image}
       alt={name}
-      className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-30"
+      className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-30"
     />
-    <div className="absolute inset-0 bg-brand-accent p-8 flex flex-col justify-end text-left opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div className="absolute inset-0 bg-brand-accent p-8 flex flex-col justify-end text-left opacity-0 group-hover:opacity-100 transition-opacity duration-500">
       <h3 className="text-2xl font-bold text-white">{name}</h3>
       <p className="text-white text-opacity-80">{role}</p>
     </div>
@@ -29,11 +29,11 @@ const TeamMemberCard: React.FC<TeamMember> = ({ name, role, image }) => (
 
 const TeamSection: React.FC = () => {
   return (
-    <section id="team" className="py-16 md:py-24 bg-white dark:bg-brand-primary">
+    <section id="team" className="py-24 md:py-32 bg-white dark:bg-brand-primary">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-            Meet The Minds Behind Your Success
+            Our Team
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-brand-secondary">
             A passionate collective of strategists, creatives, and digital experts dedicated to transforming your vision into reality.

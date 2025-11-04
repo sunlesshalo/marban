@@ -9,7 +9,7 @@ const Logo: React.FC<{ src: string; alt: string; isDark: boolean }> = ({ src, al
       <img
         src={logoSrc}
         alt={alt}
-        className="h-16 md:h-24 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 cursor-pointer"
+        className="h-20 md:h-28 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 cursor-pointer"
       />
     </div>
   );
@@ -34,7 +34,7 @@ const PartnersSection: React.FC = () => {
   const extendedPartners = [...partners, ...partners, ...partners];
 
   return (
-    <section id="partners" className="py-16 md:py-24 bg-white dark:bg-brand-primary">
+    <section id="partners" className="py-24 md:py-32 bg-white dark:bg-brand-primary">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
           Trusted by Industry Leaders
