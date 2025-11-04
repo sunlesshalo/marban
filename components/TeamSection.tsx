@@ -10,7 +10,7 @@ const teamMembers: TeamMember[] = [
   { name: 'Márton Áron', role: 'Founder', image: '/images/team/márton-áron---founder.png' },
   { name: 'Márton Ágnes', role: 'Creative Director', image: '/images/team/márton-ágnes---creative-director.png' },
   { name: 'Rámay Zsolt', role: 'Sales Director', image: '/images/team/rámay-zsolt---sales-director.png' },
-  { name: 'Csuszner Ferenz', role: 'Strategic Partner', image: '/images/team/csuszner-ferenz---strategic-partner.png' },
+  { name: 'Csuszner Ferencz', role: 'Strategic Advisor', image: '/images/team/csuszner-ferencz---strategic-advisor.png' },
 ];
 
 const TeamMemberCard: React.FC<TeamMember> = ({ name, role, image }) => (
