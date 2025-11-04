@@ -39,10 +39,10 @@ const Header: React.FC = () => {
                     <div className="flex flex-col h-full">
                         <div className="flex-grow">
                             <h1 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white leading-tight animate-fade-in-up drop-shadow-2xl" style={{ animationDelay: '0.2s', textShadow: '0 4px 12px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3)' }}>
-                                Making<br />Social Media<br /><span className="text-brand-accent">Work For You</span>
+                                Turn Followers<br />Into <span className="text-brand-accent">Customers</span>
                             </h1>
                             <p className="mt-6 text-xl md:text-2xl text-gray-800 dark:text-brand-secondary font-medium animate-fade-in-up" style={{ animationDelay: '0.4s', textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
-                                Strategic marketing solutions for ambitious brands
+                                Marketing that drives revenue, not just likes
                             </p>
                             <a
                                 href="#contact"

@@ -33,10 +33,10 @@ const TeamSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-            Our Team
+            Meet Your Growth Team
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-brand-secondary">
-            A passionate collective of strategists, creatives, and digital experts dedicated to transforming your vision into reality.
+            Strategists, creators, and problem-solvers obsessed with driving results
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

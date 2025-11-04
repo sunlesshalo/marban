@@ -65,14 +65,14 @@ const ContactForm: React.FC = () => {
 
 const ContactSection: React.FC = () => {
     return (
-        <section id="contact" className="bg-white dark:bg-brand-primary py-16 md:py-24">
+        <section id="contact" className="bg-white dark:bg-brand-primary py-24 md:py-32">
             <div className="container mx-auto px-6">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-                        Start The Conversation
+                        Let's Talk
                     </h2>
                     <p className="mt-4 text-lg text-gray-600 dark:text-brand-secondary">
-                        Have a project in mind or just want to say hello? Drop us a line.
+                        Tell us about your business and we'll show you how we can help
                     </p>
                 </div>
                 <div className="mt-12 max-w-xl mx-auto">

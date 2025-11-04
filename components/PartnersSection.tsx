@@ -37,10 +37,10 @@ const PartnersSection: React.FC = () => {
     <section id="partners" className="py-24 md:py-32 bg-white dark:bg-brand-primary">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-          Trusted by Industry Leaders
+          Who We Work With
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600 dark:text-brand-secondary">
-          We're proud to have partnered with a diverse range of businesses, helping them achieve their marketing objectives and surpass expectations.
+          From startups to established brands, we help businesses grow through strategic marketing
         </p>
       </div>
       <div className="mt-12 w-full overflow-hidden relative">

@@ -21,35 +21,35 @@ const ApproachSection: React.FC = () => {
   const pillars: PillarProps[] = [
     {
       icon: <LightbulbIcon />,
-      title: 'Strategy & Insights',
-      description: 'We build data-driven strategies that resonate with your audience.',
+      title: 'Strategy First',
+      description: 'We find what works for your audience and build on it.',
     },
     {
       icon: <TargetIcon />,
-      title: 'Creative Execution',
-      description: 'Bringing your brand story to life with compelling content and campaigns.',
+      title: 'Creative That Converts',
+      description: 'Content designed to engage and drive action.',
     },
     {
       icon: <ArrowUpIcon />,
-      title: 'Digital Optimization',
-      description: 'Maximizing your reach and impact across all digital channels.',
+      title: 'Smart Distribution',
+      description: 'Getting your message in front of the right people.',
     },
     {
       icon: <ChartBarIcon />,
-      title: 'Measurable Results',
-      description: 'Focused on delivering clear, quantifiable ROI that matters to your business.',
+      title: 'Track Everything',
+      description: 'Data-driven decisions that improve your ROI.',
     },
   ];
 
   return (
-    <section id="approach" className="py-16 md:py-24 bg-gray-50 dark:bg-black">
+    <section id="approach" className="py-24 md:py-32 bg-gray-50 dark:bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-            You Need A Strategy, Not A Sacrifice.
+            How We Work
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-brand-secondary">
-            Our framework is built on precision, creativity, and relentless optimization.
+            Strategy, creativity, and results—no fluff, just what works
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
