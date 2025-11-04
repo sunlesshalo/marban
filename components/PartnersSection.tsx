@@ -1,21 +1,25 @@
 import React from 'react';
 
-const Logo: React.FC<{ name: string }> = ({ name }) => (
+const Logo: React.FC<{ src: string; alt: string }> = ({ src, alt }) => (
   <div className="flex-shrink-0 mx-4 md:mx-8">
-    <div className="text-2xl font-semibold text-slate-400 dark:text-slate-500 filter grayscale hover:grayscale-0 hover:text-gray-900 dark:hover:text-white transition-all duration-300 cursor-pointer">
-      {name}
-    </div>
+    <img
+      src={src}
+      alt={alt}
+      className="h-12 md:h-16 w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
+    />
   </div>
 );
 
 const PartnersSection: React.FC = () => {
   const partners = [
-    'TechCorp',
-    'Innovate LLC',
-    'Quantum Inc.',
-    'NextGen',
-    'Apex Global',
-    'Synergy Co.'
+    { src: '/images/logos/agrowest.png', alt: 'AgroWest' },
+    { src: '/images/logos/hbt-5.png', alt: 'HBT Beton' },
+    { src: '/images/logos/kinder-dance.png', alt: 'Kinder Dance' },
+    { src: '/images/logos/oteluri-3.png', alt: 'Oteluri' },
+    { src: '/images/logos/sipcarp.png', alt: 'Sipcarp' },
+    { src: '/images/logos/sovidek-4.png', alt: 'Sovidek' },
+    { src: '/images/logos/junius.png', alt: 'Junius' },
+    { src: '/images/logos/jupanu-(6).png', alt: 'Jupanu' }
   ];
 
   // Duplicate the partners array to create a seamless loop
@@ -35,7 +39,7 @@ const PartnersSection: React.FC = () => {
         <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white dark:from-brand-primary to-transparent z-10"></div>
         <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white dark:from-brand-primary to-transparent z-10"></div>
         <div className="flex whitespace-nowrap animate-slide hover:[animation-play-state:paused]">
-          {extendedPartners.map((name, index) => <Logo key={`${name}-${index}`} name={name} />)}
+          {extendedPartners.map((partner, index) => <Logo key={`${partner.alt}-${index}`} src={partner.src} alt={partner.alt} />)}
         </div>
       </div>
     </section>
