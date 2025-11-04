@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Logo: React.FC<{ src: string; alt: string }> = ({ src, alt }) => (
-  <div className="flex-shrink-0 mx-4 md:mx-8">
+  <div className="flex-shrink-0 mx-6 md:mx-10">
     <img
       src={src}
       alt={alt}
-      className="h-12 md:h-16 w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
+      className="h-16 md:h-24 w-auto object-contain filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
     />
   </div>
 );
@@ -22,8 +22,8 @@ const PartnersSection: React.FC = () => {
     { src: '/images/logos/jupanu-(6).png', alt: 'Jupanu' }
   ];
 
-  // Duplicate the partners array to create a seamless loop
-  const extendedPartners = [...partners, ...partners];
+  // Triple the partners array to create a seamless infinite loop
+  const extendedPartners = [...partners, ...partners, ...partners];
 
   return (
     <section id="partners" className="py-16 md:py-24 bg-white dark:bg-brand-primary">
