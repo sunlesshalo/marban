@@ -4,14 +4,42 @@ const ContactForm: React.FC = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form Submitted:', { name, email, message });
-        alert('Thank you for your message!');
-        setName('');
-        setEmail('');
-        setMessage('');
+        setIsSubmitting(true);
+
+        try {
+            const webhookUrl = 'https://hook.eu2.make.com/4vai330dej3wg6gmt1xhudepea3dg2yi';
+
+            const response = await fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    message,
+                    timestamp: new Date().toISOString(),
+                }),
+            });
+
+            if (response.ok) {
+                alert('Thank you for your message! We\'ll get back to you soon.');
+                setName('');
+                setEmail('');
+                setMessage('');
+            } else {
+                alert('Something went wrong. Please try again or email us directly at info@marbansolutions.com');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Something went wrong. Please try again or email us directly at info@marbansolutions.com');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -54,9 +82,10 @@ const ContactForm: React.FC = () => {
             </div>
             <button
                 type="submit"
-                className="w-full bg-brand-accent text-white font-bold py-3 px-6 text-lg uppercase hover:bg-red-800 transition duration-300 transform hover:scale-105"
+                disabled={isSubmitting}
+                className="w-full bg-brand-accent text-white font-bold py-3 px-6 text-lg uppercase hover:bg-red-800 transition duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
         </form>
     );
