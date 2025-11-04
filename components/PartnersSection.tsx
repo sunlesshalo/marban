@@ -9,7 +9,7 @@ const Logo: React.FC<{ src: string; alt: string; isDark: boolean }> = ({ src, al
       <img
         src={logoSrc}
         alt={alt}
-        className="h-20 md:h-28 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 cursor-pointer"
+        className="h-24 md:h-36 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300 cursor-pointer"
       />
     </div>
   );
