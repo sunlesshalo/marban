@@ -65,7 +65,7 @@ const Header: React.FC = () => {
                             <a href="https://instagram.com/marban_solutions" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors my-4">
                                 <InstagramIcon className="w-6 h-6" />
                             </a>
-                            <a href="#" className="text-gray-600 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors my-4">
+                            <a href="https://www.facebook.com/marbansolutions" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors my-4">
                                 <FacebookIcon className="w-6 h-6" />
                             </a>
                          </div>
