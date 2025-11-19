@@ -34,7 +34,7 @@ const PartnersSection: React.FC = () => {
   const extendedPartners = [...partners, ...partners, ...partners];
 
   return (
-    <section id="partners" className="py-24 md:py-32 bg-white dark:bg-brand-primary">
+    <section id="partners" className="pt-24 md:pt-32 pb-16 md:pb-20 bg-white dark:bg-brand-primary">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
           Who We Work With
