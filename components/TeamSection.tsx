@@ -18,9 +18,15 @@ const TeamMemberCard: React.FC<TeamMember> = ({ name, role, image }) => (
     <img
       src={image}
       alt={name}
-      className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-30"
+      className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 md:group-hover:opacity-30"
     />
-    <div className="absolute inset-0 bg-brand-accent p-8 flex flex-col justify-end text-left opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+    {/* Mobile: Always visible */}
+    <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 to-transparent p-6 flex flex-col justify-end text-left md:hidden">
+      <h3 className="text-xl font-bold text-white">{name}</h3>
+      <p className="text-white text-opacity-90 text-sm">{role}</p>
+    </div>
+    {/* Desktop: Show on hover */}
+    <div className="hidden md:flex absolute inset-0 bg-brand-accent p-8 flex-col justify-end text-left opacity-0 group-hover:opacity-100 transition-opacity duration-500">
       <h3 className="text-2xl font-bold text-white">{name}</h3>
       <p className="text-white text-opacity-80">{role}</p>
     </div>
@@ -33,10 +39,10 @@ const TeamSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-            Meet Your Growth Team
+            Led By Experts
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-brand-secondary">
-            Strategists, creators, and problem-solvers obsessed with driving results
+            Our leadership team brings decades of combined experience in strategy, creativity, and sales
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

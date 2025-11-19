@@ -1,5 +1,5 @@
 import React from 'react';
-import { FacebookIcon, InstagramIcon, TwitterIcon, LinkedInIcon } from './Icons';
+import { FacebookIcon, InstagramIcon } from './Icons';
 
 const Logo: React.FC = () => (
     <div className="flex items-center font-bold text-2xl tracking-widest text-gray-900 dark:text-white">
@@ -22,10 +22,8 @@ const Footer: React.FC = () => {
                 &copy; {new Date().getFullYear()} Marban Solutions. All Rights Reserved.
             </div>
             <div className="flex justify-center space-x-4">
-                <a href="#" className="text-gray-500 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors"><FacebookIcon className="w-6 h-6" /></a>
+                <a href="https://www.facebook.com/marbansolutions" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors"><FacebookIcon className="w-6 h-6" /></a>
                 <a href="https://instagram.com/marban_solutions" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors"><InstagramIcon className="w-6 h-6" /></a>
-                <a href="#" className="text-gray-500 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors"><TwitterIcon className="w-6 h-6" /></a>
-                <a href="#" className="text-gray-500 dark:text-brand-secondary hover:text-brand-accent dark:hover:text-white transition-colors"><LinkedInIcon className="w-6 h-6" /></a>
             </div>
         </div>
         <div className="mt-8 border-t border-gray-200 dark:border-gray-800 pt-6 text-center text-xs text-gray-500">
