@@ -46,7 +46,7 @@ const PartnersSection: React.FC = () => {
       <div className="mt-12 w-full overflow-hidden relative">
         <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white dark:from-brand-primary to-transparent z-10"></div>
         <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white dark:from-brand-primary to-transparent z-10"></div>
-        <div className="flex whitespace-nowrap animate-slide hover:[animation-play-state:paused]">
+        <div className="flex whitespace-nowrap animate-slide-fast md:animate-slide hover:[animation-play-state:paused]">
           {extendedPartners.map((partner, index) => <Logo key={`${partner.alt}-${index}`} src={partner.src} alt={partner.alt} isDark={isDark} />)}
         </div>
       </div>
